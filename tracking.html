@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ShipEm — Anything to Anywhere</title>
+<!-- tracking.html -->
+<link rel="stylesheet" href="tracking.css">
+</head>
+<body>
+<div class="tracking-wrapper">
+  <div class="tracking-form">
+    <label for="trackInput">Enter Consignment no</label>
+    <div class="track-controls">
+      <input id="trackInput" type="text" placeholder="e.g. 11110040" />
+      <button id="trackBtn" class="btn btn-primary" type="button">Track</button>
+    </div>
+  </div>
+
+  <div id="trackResult" class="track-result" aria-live="polite" role="region" aria-label="Tracking results"></div>
+</div>
+
+<!-- include the renderer script (defer recommended) -->
+<script src="tracking.js" defer></script>
+</body>
