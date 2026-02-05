@@ -80,7 +80,7 @@ const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxzXtAKOeqg0bHR
     html += '<div class="bar destination">' + destText + '</div>';
     html += '</div>';
     html += '<div class="track-right">';
-    html += '<img src="/Logo/el_logo.svg" alt="ShipEm" class="track-logo">';
+    html += '<img src="Logo/el_logo.svg" alt="ShipEm" class="track-logo">';
     html += '</div>';
     html += '</div>';
 
@@ -117,4 +117,5 @@ const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxzXtAKOeqg0bHR
       return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m];
     });
   }
+
 })();
