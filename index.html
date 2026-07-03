@@ -1,41 +1,56 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18201815582"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-18201815582');
-</script>
+  <!-- Meta tags for SEO and accessibility -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="International & domestic courier services. Fast, reliable, and affordable shipping solutions from ShipEm Express. Book online or get a free quote.">
+  <meta name="theme-color" content="#5A7931">
+  
+  <!-- Open Graph tags for social sharing -->
+  <meta property="og:title" content="ShipEm — Anything to Anywhere">
+  <meta property="og:description" content="Fast, affordable, and reliable courier services. Ship anything to anywhere with ShipEm Express.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://shipem.com">
+  <meta property="og:image" content="Logo/mainlogo.svg">
+  
+  <!-- Twitter Card tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ShipEm — Anything to Anywhere">
+  <meta name="twitter:description" content="Fast, affordable courier services for domestic and international shipping.">
+  <meta name="twitter:image" content="Logo/mainlogo.svg">
+
   <title>ShipEm — Anything to Anywhere</title>
- <link rel="icon" href="Logo/favicon.svg" type="image/svg">
+  <link rel="icon" href="Logo/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="sample1.css">
 
-
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18201815582"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-18201815582');
+  </script>
 </head>
 <body>
   <header class="site-header">
     <div class="header-inner">
-      <a class="logo" href="index.html">
+      <a class="logo" href="index.html" aria-label="ShipEm Home">
         <img src="Logo/mainlogo.svg" alt="ShipEm logo" class="logo-img">
       </a>
       <nav class="main-nav">
-       <a class="abt" href="#" style="color: #5A7931;">Home</a>
+        <a class="abt" href="index.html">Home</a>
         <a class="abt" href="about.html">About</a>
-        <a class="enq" href="https://wa.me/918148655877" target="_blank" rel="noopener noreferrer">Enquiry</a>
+        <a class="enq" href="https://wa.me/918148655877" target="_blank" rel="external noopener noreferrer">Enquiry</a>
         <a class="srv" href="services.html">Services</a>
         <a class="abt" href="track.html">Track</a>
         <a class="con" href="contact.html">Contact</a>
       </nav>
-
-      
     </div>
   </header>
 
@@ -49,16 +64,16 @@
         </div>
 
         <div class="hero-right">
-          <h1 style="background: -webkit-linear-gradient(0deg, #283B91, #5A7931); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Anything to Anywhere</h1>
-             <h2 style="font-size: 16px; margin: 0; color: #3b7a2e;">International & Domestic Courier Services</h2>
-         <div class="ln-brk"></div>
-             <p class="lead">
-            Sending a gift to family or a sale to a buyer? ShipEm Express makes courier services simple, affordable, and incredibly fast. Just book it and we’ll handle the rest.
+          <h1 class="hero-title">Anything to Anywhere</h1>
+          <h2 class="hero-subtitle">International & Domestic Courier Services</h2>
+          <div class="ln-brk"></div>
+          <p class="lead">
+            Sending a gift to family or a sale to a buyer? ShipEm Express makes courier services simple, affordable, and incredibly fast. Just book it and we'll handle the rest.
           </p>
 
           <div class="hero-ctas">
-            <a href="contact.html" id="openBooking" class="btn-primary" type="button">Book at branch</a>
-            <a class="btn-ghost" href="https://wa.me/918148655877" target="_blank" rel="noopener noreferrer">Get quote now</a>
+            <a href="contact.html" class="btn-primary">Book at branch</a>
+            <a class="btn-ghost" href="https://wa.me/918148655877" target="_blank" rel="external noopener noreferrer">Get quote now</a>
           </div>
         </div>
       </div>
@@ -88,27 +103,28 @@
           <div class="feature">
             <h3>Track your package</h3>
             <div class="track-box">
-              
-              <a href="track.html"><button id="trackBtn" class="btn btn-track" src>Click here to Track your package</button></a>
+              <a href="track.html" class="btn btn-track">Click here to track your package</a>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <script src="tracking.js" defer></script>
+
     <section class="reviews">
       <div class="container">
         <h3 class="section-title">Customer reviews</h3>
         <div class="review-shell">
-          <button class="review-arrow left" onclick="prevReview()">‹</button>
+          <button class="review-arrow left" onclick="prevReview()" aria-label="Previous review">‹</button>
           <div class="review-card" id="reviewCard">
             <div class="review-route">IND to UK</div>
-              <strong>Radha, Madurai</strong>
-              <blockquote>
-              <p>Parcel received nicely without any damage! Thank you so much.    </p>
+            <strong>Radha, Madurai</strong>
+            <blockquote>
+              <p>Parcel received nicely without any damage! Thank you so much.</p>
             </blockquote>
           </div>
-          <button class="review-arrow right" onclick="nextReview()">›</button>
+          <button class="review-arrow right" onclick="nextReview()" aria-label="Next review">›</button>
         </div>
       </div>
     </section>
@@ -119,30 +135,39 @@
         <p class="services-desc">At ShipEm, we provide reliable, efficient, and tailored logistics solutions designed to meet every need.</p>
       </div>
       <div class="srv-typ">
-        <a class="srv-int" href="services.html#in-co" target="_blank"><img class="s-icon" src="Images/airplane.png" alt="" style="width: 40px; padding: 0px;"><p style="margin-bottom: 0; margin-top: 0;">International Courier</p><p style="font-weight: 400; font-size: 10pt; margin: 0;">Send your packages to more than 200 countries</p></a>
-        <a class="srv-med" href="services.html#:~:text=and%20import%20needs.-,Medicine%20Courier" target="_blank"> <img class="s-icon" src="Images/med.png" alt="" style="width: 40px; padding: 0px;"><p style="margin-bottom: 0; margin-top: 0;">Medicine courier</p><p style="font-weight: 400; font-size: 10pt;  margin: 0;">Send Medicine Shipment Internationally</p></a>
-        <a class="srv-b2b" href="services.html#:~:text=our%20highest%20priorities.-,B2B,-Solutions" target="_blank"><img class="s-icon" src="Images/b2b.png" alt="" style="width: 40px; padding: 0px;"><p style="margin-bottom: 0; margin-top: 0;">B2B</p><p style="font-weight: 400; font-size: 10pt;  margin: 0;">International commercial & business shipments</p></a>
-        <a class="srv-dom" href="services.html#:~:text=predictable%20supply%20chain.-,Domestic,-Courier" target="_blank"><img class="s-icon" src="Images/domes.png" alt="" style="width: 40px; padding: 0px;"><p style="margin-bottom: 0; margin-top: 0;">Domestic Courier</p><p style="font-weight: 400; font-size: 10pt; margin: 0;">Send your packages across the country</p></a>
+        <a class="srv-int" href="services.html#in-co" target="_blank" rel="external noopener">
+          <img class="s-icon" src="Images/airplane.png" alt="International courier service icon">
+          <p>International</p>
+        </a>
+        <a class="srv-med" href="services.html#medicine" target="_blank" rel="external noopener">
+          <img class="s-icon" src="Images/med.png" alt="Medicine courier service icon">
+          <p>Medicine Courier</p>
+        </a>
+        <a class="srv-b2b" href="services.html#b2b" target="_blank" rel="external noopener">
+          <img class="s-icon" src="Images/b2b.png" alt="B2B logistics solutions icon">
+          <p>B2B Solutions</p>
+        </a>
+        <a class="srv-dom" href="services.html#domestic" target="_blank" rel="external noopener">
+          <img class="s-icon" src="Images/domes.png" alt="Domestic courier service icon">
+          <p>Domestic Courier</p>
+        </a>
       </div>
-      
     </section>
 
     <section class="final-cta">
       <div class="container cta-inner">
         <h3>Ready to Start Shipping with Confidence?</h3>
         <p>Choosing the right logistics partner is critical to your success. At ShipEm, we combine technology and service to deliver value.</p>
-        <a class="btn btn-primary cta-btn" href="https://wa.me/918148655877" target="_blank" rel="noopener noreferrer">Get Your Free Quote Now</a>
+        <a class="btn btn-primary cta-btn" href="https://wa.me/918148655877" target="_blank" rel="external noopener noreferrer">Get Your Free Quote Now</a>
       </div>
     </section>
   </main>
 
-
   <!-- Booking modal (used by booking-embed.js) -->
-  <div id="bookingModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="bookingTitle">
+  <div id="bookingModal" class="modal" aria-hidden="true" aria-modal="true" role="dialog" aria-labelledby="bookingTitle">
     <div class="modal-overlay" data-dismiss="modal"></div>
     <div class="modal-panel" role="document">
       <button class="modal-close" id="closeBooking" aria-label="Close booking dialog">✕</button>
-
       <div id="modalContent">
         <h2 id="bookingTitle">Booking</h2>
         <p>Select "Book now" to open the booking form.</p>
@@ -150,17 +175,21 @@
     </div>
   </div>
 
-   <footer>
-        <div class="cont_t" style="display: flex; flex-direction: row; align-items: center;">Connect us on
-            <div class="instagram">
-                <a href="https://www.instagram.com/shipem.el/" target="_blank"><img src="Icons/insta.svg" alt="Instagram icon"></a>
-            </div>
-            <div class="facebook">
-                <a href="https://www.facebook.com/shipem.el" target="_blank"><img src="Icons/fb.svg" alt="Facebook icon"></a>
-            </div>
-            </div>
-        <div><p class="legal-text">©Copyright 2026 | ShipEm Enterprises</p></div>
-    </footer>
+  <footer>
+    <div class="cont_t">Connect us on
+      <div class="social-links">
+        <a href="https://www.instagram.com/shipem.el/" target="_blank" rel="external noopener noreferrer" aria-label="Follow ShipEm on Instagram">
+          <img src="Icons/insta.svg" alt="Instagram icon">
+        </a>
+        <a href="https://www.facebook.com/shipem.el" target="_blank" rel="external noopener noreferrer" aria-label="Follow ShipEm on Facebook">
+          <img src="Icons/fb.svg" alt="Facebook icon">
+        </a>
+      </div>
+    </div>
+    <div>
+      <p class="legal-text">©Copyright 2026 | ShipEm Enterprises</p>
+    </div>
+  </footer>
 
   <script>
     // simple review slider data & functions
@@ -174,8 +203,9 @@
 
     function renderReview(i) {
       const r = reviews[i];
-      reviewCard.innerHTML = '<div class="review-route">'+r.route+'</div>' +
-        '<blockquote>“<strong>'+r.person+'</strong><p>'+r.text+'</p>”</blockquote>';
+      reviewCard.innerHTML = '<div class="review-route">' + r.route + '</div>' +
+        '<strong>' + r.person + '</strong>' +
+        '<blockquote><p>' + r.text + '</p></blockquote>';
     }
     function nextReview(){ idx=(idx+1)%reviews.length; renderReview(idx); }
     function prevReview(){ idx=(idx-1+reviews.length)%reviews.length; renderReview(idx); }
