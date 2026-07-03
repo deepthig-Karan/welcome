@@ -1,0 +1,41 @@
+# Force HTTPS redirect for all traffic
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# Add security headers to prevent mixed content
+<IfModule mod_headers.c>
+  # Strict-Transport-Security: Forces HTTPS for 1 year
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+  
+  # X-Content-Type-Options: Prevents MIME-type sniffing
+  Header always set X-Content-Type-Options "nosniff"
+  
+  # X-Frame-Options: Prevents clickjacking
+  Header always set X-Frame-Options "SAMEORIGIN"
+  
+  # X-XSS-Protection: Additional XSS protection
+  Header always set X-XSS-Protection "1; mode=block"
+  
+  # Referrer-Policy: Controls referrer information
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Enable gzip compression for better mobile performance
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+</IfModule>
+
+# Cache optimization for faster mobile loading
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/html "access plus 1 week"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType image/svg+xml "access plus 1 month"
+  ExpiresByType image/png "access plus 1 month"
+  ExpiresByType image/jpeg "access plus 1 month"
+  ExpiresByType image/gif "access plus 1 month"
+</IfModule>
