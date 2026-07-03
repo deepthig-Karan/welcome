@@ -7,8 +7,8 @@
   <meta name="description" content="International & domestic courier services. Fast, reliable, and affordable shipping solutions from ShipEm Express. Book online or get a free quote.">
   <meta name="theme-color" content="#5A7931">
   
-  <!-- Force HTTPS on all connections (fixes mobile network security warnings) -->
-  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <!-- Comprehensive Content Security Policy to prevent mixed content and XSS -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' https: data:; connect-src 'self' https://www.google-analytics.com; frame-ancestors 'self'; upgrade-insecure-requests;">
   
   <!-- Open Graph tags for social sharing -->
   <meta property="og:title" content="ShipEm — Anything to Anywhere">
@@ -27,7 +27,7 @@
   <link rel="icon" href="https://shipem.in/Logo/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" crossorigin="anonymous">
   <link rel="stylesheet" href="https://shipem.in/style.css">
   <link rel="stylesheet" href="https://shipem.in/sample1.css">
 
@@ -138,19 +138,19 @@
         <p class="services-desc">At ShipEm, we provide reliable, efficient, and tailored logistics solutions designed to meet every need.</p>
       </div>
       <div class="srv-typ">
-        <a class="srv-int" href="https://shipem.in/services.html#in-co" target="_blank" rel="external noopener">
+        <a class="srv-int" href="https://shipem.in/services.html#in-co" rel="external noopener">
           <img class="s-icon" src="https://shipem.in/Images/airplane.png" alt="International courier service icon">
           <p>International</p>
         </a>
-        <a class="srv-med" href="https://shipem.in/services.html#medicine" target="_blank" rel="external noopener">
+        <a class="srv-med" href="https://shipem.in/services.html#medicine" rel="external noopener">
           <img class="s-icon" src="https://shipem.in/Images/med.png" alt="Medicine courier service icon">
           <p>Medicine Courier</p>
         </a>
-        <a class="srv-b2b" href="https://shipem.in/services.html#b2b" target="_blank" rel="external noopener">
+        <a class="srv-b2b" href="https://shipem.in/services.html#b2b" rel="external noopener">
           <img class="s-icon" src="https://shipem.in/Images/b2b.png" alt="B2B logistics solutions icon">
           <p>B2B Solutions</p>
         </a>
-        <a class="srv-dom" href="https://shipem.in/services.html#domestic" target="_blank" rel="external noopener">
+        <a class="srv-dom" href="https://shipem.in/services.html#domestic" rel="external noopener">
           <img class="s-icon" src="https://shipem.in/Images/domes.png" alt="Domestic courier service icon">
           <p>Domestic Courier</p>
         </a>
